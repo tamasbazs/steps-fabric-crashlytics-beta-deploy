@@ -156,6 +156,7 @@ if [ ! -z "${dsym_path}" ] ; then
   dsym_cmd="${dsym_cmd} -a \"${api_key}\""
   dsym_cmd="${dsym_cmd} -p ios"
   dsym_cmd="${dsym_cmd} \"${dsym_path}\""
+  dsym_cmd="${dsym_cmd} -d"
 
   echo_details "$dsym_cmd"
   echo
